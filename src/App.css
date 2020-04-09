@@ -1,38 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Oswald&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+* {
+  border: border-box;
+  margin: 0;
+}
+
 .App {
+  margin: 0;
+  padding: 0;
+}
+
+/*header.js*/
+
+header {
+  background: #201f1f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em .8em;
+}
+
+header > .nav {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: .5em;
+}
+
+header ul {
+  display: none;
+}
+
+
+
+header span {
+  font-family: 'Mrs Saint Delafield',
+  cursive;
+  font-size: 2em;
+  color: #e7a54f;
+}
+
+/* Landing.js */
+
+.container {
+  background-image: url(Images/bak4.jpg);
+  background-size: cover;
+  background-position: 60% 0;
+  height: 70vh;
+  width: 100%;
+  margin-top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content span {
+  font-family: 'Mrs Saint Delafield', cursive;
+  color: #e99322;
+  font-size: 3em;
+  margin-left: .7em;
+}
+
+.content h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.content .btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+
+}
+
+.content .btn .btn1 {
+  background: transparent;
+  border: 1px solid #e99322;
+  padding: .8em;
+  color: #e99322;
+}
+
+.content .btn .btn2 {
+  background: #e99322;
+  border: 1px solid #e99322;
+  padding: .8em;
+  color: #000;
+}
+
+/* Reserve.js */
+
+.reserve {
+  background: #e99322;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.reserve h3 {
+  font-family: 'Oswald',
+  sans-serif;
+  font-size: 1em;
+}
+
+.reserve button {
+  margin-top: 1em;
+  background: transparent;
+  padding: .5em;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/* Items.js */
+
+.items {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #201f1f;
+  padding: 2em 2em 0 2em;
+  color: #fff;
+  font-family: 'Oswald',
+  sans-serif;
+}
+
+.items img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-self: center;
+  margin-bottom: 1em;
+}
+
+.items div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+
+}
+
+.items .starter p {
+  font-family: 'Mrs Saint Delafield',
+  cursive;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #e99322;
+}
+
+.items .starter {
+  border-bottom: none;
+}
+
+.items .starter:after {
+  border: 1px 0 0 0 solid #e99322;
+  width: 3em;
+}
+
+.items div:nth-child(7) {
+  border-bottom: none;
+}
+
+.items div p {
   text-align: center;
+  word-wrap: break-word;
+  margin: 1em;
+  font-size: smaller;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.items div span {
+  color: #e99322;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Menu.js */
+
+.menu {
+  background-image: url(Images/bak3.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu .more {
+  background: #201f1f;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+}
+
+.menu .more h3 {
+  color: #e99322;
+  font-family: 'Mrs Saint Delafield',
+  cursive;
+  font-size: 2em;
+  margin: 0 0 1em 1.9em;
+}
+
+.menu .more h2, p {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.menu .more p {
+  font-size: .7em;
+  margin: 1em;
+}
+
+.menu .more button {
+  background: transparent;
+  border: 1px solid #e99322;
+  padding: .7em;
+  color: #e99322;
+  width: 40%;
+  align-self: center;
+  cursor: pointer;
+}
+
+/*Contact.js */
+
+.contact {
+  height: 690px;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 9em;
+  background: #201f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.cont1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+}
+
+.contact h3 {
+  margin-top: 6em;
+  text-align: center;
+   font-family: 'Mrs Saint Delafield',
+   cursive;
+   color: #e99322;
+   font-size: 2em;
+}
+
+.cont1 p {
+  text-align: center;
+  margin-bottom: .5em;
+  font-size: .8em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .cont1 p i {
+  color: #e99322;
+}
+
+
+.cont2 {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: .5em;
+}
+
+.cont2 input, textarea {
+  width: 300px;
+  margin-bottom: 1em;
+  padding: .6em;
+  background: #c7c2c2;
+  border: none;
+  color: #000;
+}
+
+.cont2 button {
+  width: 60%;
+  align-self: left;
+  background: transparent;
+  border: 1px solid #e99322;
+  padding: .7em;
+  color: #e99322;
+  cursor: pointer;
+}
+
+/* Footer.js*/ 
+
+.footer {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 70px;
+  padding: 1em;
+  font-size: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.footer .logo {
+  font-family: 'Mrs Saint Delafield',
+  cursive;
+  font-size: 1em;
+  color: #e7a54f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer .social span {
+  margin: 0 .6em;
 }
+
+@media (min-width: 900px) {
+  header {
+    padding: 0 100px;
+  }
+
+  header>.nav {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  header ul li {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: .8em .8em;
+    font-size: .9em;
+    cursor: pointer;
+  }
+
+  .content span {
+    margin-left: 0;
+  }
+
+  .container {
+    background-size: cover;
+    background-position: 60% 0;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container .content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    left: 0;
+    margin-left: 100px;
+  }
+
+  .content .btn {
+    display: flex;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  .content span {
+    font-size: 5em;
+  }
+
+  .content .btn .btn2 {
+    margin-left: 20px;
+  }
+
+  .reserve {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .reserve h3 {
+    margin-left: 250px;
+    font-size: 20px;
+  }
+
+  .reserve button {
+    margin-right: 100px;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .items .item-wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+  }
+
+  .items .item-wrap img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item1 {
+    padding: 0 2em 0 0;
+  }
+
+  .item1 .title {
+    display: flex;
+    flex-direction: column;
+    background: #57534f;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .item2 .title {
+    display: flex;
+    flex-direction: column;
+    background: #57534f;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .item2 {
+    padding: 0 0 0 2em;
+  }
+
+  .items div {
+    border-bottom: none;
+  }
+
+  .item1 div {
+    display: flex;
+    flex-direction: row;
+    font-size: .8em;
+    padding: 0 1em 0 1em;
+  }
+
+  .item2 div {
+    display: flex;
+    flex-direction: row;
+    font-size: .8em;
+    padding: 0 1em 0 1em;
+  }
+
+  .menu {
+    background-position: 30% 20%;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu .more {
+    margin-left: 100px;
+    position: relative;
+    right: 0;
+  }
+
+ .contact {
+   height: 100%;
+   width: 100%;
+   margin-top: 0;
+   padding-top: 7em;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+ }
+
+ .contact-wrap {
+   margin-bottom: 2em;
+   width: 80%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .cont1 {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 1em;
+
+ }
+
+ .contact h3 {
+   margin-top: 7em;
+   margin-bottom: 1em;
+   text-align: left;
+   color: #e99322;
+ }
+
+ .cont1 p {
+   padding-bottom: 1.5em;
+   text-align: center;
+   margin-bottom: .5em;
+   font-size: 1em;
+   width: 100%;
+   display: flex;
+ }
+
+ .contact .cont1 p i {
+   color: #e99322;
+   margin-right: 3em;
+ }
+
+
+ .cont2 {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: .5em;
+ }
+
+ .cont2 input,
+ textarea {
+   width: 500px;
+   margin-bottom: 1em;
+   padding: .6em;
+   background: #c7c2c2;
+   border: none;
+   color: #000;
+ }
+
+ 
+   .footer {
+     margin-top: 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 80%;
+     height: 70px;
+     font-size: 1em;
+
+   }
+
+   .footer .logo {
+     font-family: 'Mrs Saint Delafield',
+       cursive;
+     font-size: 3em;
+   }
+ }
